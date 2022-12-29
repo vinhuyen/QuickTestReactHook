@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import {Image, Pressable, Text, View} from 'react-native';
 
 const CoinItem = ({marketCoin, setTitle, setPrice}) => {
@@ -19,5 +19,4 @@ const CoinItem = ({marketCoin, setTitle, setPrice}) => {
   );
 };
 
-export default CoinItem;
-
+export default memo(CoinItem);
